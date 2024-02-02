@@ -29,7 +29,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8501
 
 # Define environment variable
-# ENV NAME World
+ENV STREAMLIT_SERVER_PORT 8501
 
 # Run streamlit when the container launches
-CMD ["streamlit", "run", "0_⚡️<fe0f>_Welcome_to_Sparkie.py"]
+CMD ["streamlit", "run", "Welcome_to_Sparkie.py"]
